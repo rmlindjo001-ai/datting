@@ -145,17 +145,26 @@
         gap:25px;
     }
 
-    .card{
-        background:#fff;
-        border-radius:18px;
-        overflow:hidden;
-        box-shadow:0 10px 30px rgba(0,0,0,.08);
-        transition:.3s;
-    }
+   /* ========================================= */
+/* CONTENT                                   */
+/* ========================================= */
 
-    .card:hover{
-        transform:translateY(-8px);
-    }
+.card{
+    display:block;
+    text-decoration:none;
+    color:inherit;
+
+    background:#fff;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 35px rgba(0,0,0,.12);
+}
 
     .thumb{
         height:180px;
@@ -274,7 +283,7 @@
 
 <div class="grid">
 
-<div class="card">
+<a href="article-1.html" class="card">
 <div class="thumb"></div>
 <div class="card-content">
 <span class="tag">HTML & CSS</span>

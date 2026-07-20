@@ -240,6 +240,156 @@
         }
 
     }
+        /* ================= FEATURED ================= */
+
+.featured{
+
+    margin:50px auto;
+
+}
+
+.featured-card{
+
+    position:relative;
+
+    display:block;
+
+    border-radius:25px;
+
+    overflow:hidden;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.18);
+
+    transition:.4s;
+
+}
+
+.featured-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.featured-card img{
+
+    width:100%;
+
+    height:520px;
+
+    object-fit:cover;
+
+    transition:.5s;
+
+}
+
+.featured-card:hover img{
+
+    transform:scale(1.05);
+
+}
+
+.featured-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:flex-end;
+
+    padding:60px;
+
+    background:linear-gradient(to top,
+    rgba(0,0,0,.85),
+    rgba(0,0,0,.25),
+    transparent);
+
+    color:white;
+
+}
+
+.badge{
+
+    display:inline-block;
+
+    width:max-content;
+
+    background:#2563eb;
+
+    padding:8px 18px;
+
+    border-radius:30px;
+
+    font-size:14px;
+
+    margin-bottom:20px;
+
+}
+
+.featured-overlay h1{
+
+    font-size:48px;
+
+    line-height:1.2;
+
+    margin-bottom:20px;
+
+}
+
+.featured-overlay p{
+
+    max-width:700px;
+
+    font-size:18px;
+
+    margin-bottom:25px;
+
+    opacity:.95;
+
+}
+
+.featured-meta{
+
+    display:flex;
+
+    gap:25px;
+
+    flex-wrap:wrap;
+
+    font-size:15px;
+
+}
+
+@media(max-width:768px){
+
+.featured-card img{
+
+    height:340px;
+
+}
+
+.featured-overlay{
+
+    padding:25px;
+
+}
+
+.featured-overlay h1{
+
+    font-size:30px;
+
+}
+
+.featured-overlay p{
+
+    font-size:15px;
+
+}
+
+}
 
     </style>
 
@@ -281,17 +431,37 @@
 
 <main>
 
-<div class="grid">
+<section class="featured">
 
-<a href="article-1.html" class="card">
-<div class="thumb"></div>
-<div class="card-content">
-<span class="tag">HTML & CSS</span>
-<h3>Contoh Artikel 1</h3>
-<p>Ini adalah deskripsi singkat artikel. Nantinya bisa Anda ganti dengan artikel asli.</p>
-<div class="meta">20 Juli 2026 • Admin</div>
-</div>
-</div>
+    <a href="article-1.html" class="featured-card">
+
+        <img src="images/article-1.jpg" alt="7 Tips Dating yang Sehat">
+
+        <div class="featured-overlay">
+
+            <h1>
+                7 Tips Dating yang Sehat agar Hubungan Lebih Harmonis
+            </h1>
+
+            <p>
+                Pelajari cara membangun hubungan yang sehat, saling percaya, dan nyaman bersama pasangan melalui tips sederhana yang mudah diterapkan.
+            </p>
+
+            <div class="featured-meta">
+
+                <span>👤 Admin</span>
+
+                <span>📅 20 Juli 2026</span>
+
+                <span>⏱ 8 Menit</span>
+
+            </div>
+
+        </div>
+
+    </a>
+
+</section>
 
 <div class="card">
 <div class="thumb"></div>

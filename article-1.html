@@ -1,456 +1,317 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>7 Tips Dating yang Sehat agar Hubungan Lebih Harmonis</title>
+
+<meta name="description" content="Pelajari tips dating yang sehat agar hubungan semakin harmonis, nyaman, dan saling percaya.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
 <style>
 
-/* =========================================================
-   RESET
-========================================================= */
-
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
 html{
-    scroll-behavior:smooth;
+scroll-behavior:smooth;
 }
 
 body{
-    font-family:'Poppins',sans-serif;
-    background:#f5f7fb;
-    color:#1f2937;
-    line-height:1.8;
+font-family:'Poppins',sans-serif;
+background:#f5f7fb;
+color:#1f2937;
+line-height:1.8;
 }
 
-/* =========================================================
-   LINK
-========================================================= */
-
 a{
-    text-decoration:none;
-    color:inherit;
+text-decoration:none;
+color:inherit;
 }
 
 img{
-    max-width:100%;
-    display:block;
+max-width:100%;
+display:block;
 }
 
 .container{
-    width:min(900px,92%);
-    margin:auto;
+width:min(1150px,94%);
+margin:auto;
 }
 
-/* =========================================================
-   HEADER
-========================================================= */
+/* ================= HEADER ================= */
 
 header{
-
-    position:sticky;
-    top:0;
-
-    background:#ffffff;
-
-    box-shadow:0 5px 15px rgba(0,0,0,.08);
-
-    z-index:999;
-
+position:sticky;
+top:0;
+background:#ffffffee;
+backdrop-filter:blur(12px);
+box-shadow:0 5px 18px rgba(0,0,0,.08);
+z-index:999;
 }
 
 nav{
-
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-
-    padding:18px 0;
-
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 0;
 }
 
 .logo{
-
-    font-size:28px;
-    font-weight:700;
-
-    color:#2563eb;
-
+font-size:30px;
+font-weight:700;
+color:#2563eb;
 }
 
 .menu{
-
-    display:flex;
-    gap:25px;
-
+display:flex;
+gap:30px;
 }
 
 .menu a{
-
-    transition:.3s;
-
+font-weight:500;
+transition:.3s;
 }
 
 .menu a:hover{
-
-    color:#2563eb;
-
+color:#2563eb;
 }
 
-/* =========================================================
-   HERO
-========================================================= */
+/* ================= HERO ================= */
 
 .hero{
 
-    margin-top:40px;
+height:520px;
+
+background:
+
+linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+url("https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=1600&q=80");
+
+background-size:cover;
+background-position:center;
+
+display:flex;
+align-items:center;
+
+color:white;
 
 }
 
-.cover{
+.hero-content{
 
-    width:100%;
-    height:420px;
-
-    border-radius:20px;
-
-    background:linear-gradient(135deg,#2563eb,#06b6d4);
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-
-    color:white;
-
-    font-size:28px;
-    font-weight:700;
+max-width:850px;
 
 }
 
-/* =========================================================
-   ARTICLE
-========================================================= */
-.article-header h1{
-    font-size:clamp(36px,4vw,48px);
-    line-height:1.2;
-    max-width:850px;
-    margin:20px auto;
-    text-align:center;
-    font-weight:700;
+.category{
+
+display:inline-block;
+
+background:#2563eb;
+
+padding:8px 20px;
+
+border-radius:40px;
+
+font-size:14px;
+
+margin-bottom:25px;
+
+}
+
+.hero h1{
+
+font-size:clamp(36px,5vw,60px);
+
+line-height:1.2;
+
+font-weight:800;
+
+margin-bottom:20px;
+
 }
 
 .meta{
 
-    display:flex;
+display:flex;
 
-    justify-content:center;
+gap:25px;
 
-    align-items:center;
+flex-wrap:wrap;
 
-    gap:20px;
+font-size:15px;
 
-    margin:20px 0 40px;
-
-    color:#64748b;
-
-    font-size:14px;
-
-    flex-wrap:wrap;
-
-}
-/* =========================================================
-   CONTENT
-========================================================= */
-
-.article-content h2{
-
-    margin-top:40px;
-    margin-bottom:15px;
-
-    color:#0f172a;
+opacity:.95;
 
 }
 
-.article-content p{
+/* ================= PROGRESS ================= */
 
-    margin-bottom:20px;
+#progress{
 
-    text-align:justify;
+position:fixed;
+
+top:0;
+
+left:0;
+
+height:4px;
+
+width:0;
+
+background:#2563eb;
+
+z-index:9999;
 
 }
 
-.article-content ul{
+/* ================= ARTICLE ================= */
 
-    margin-left:25px;
-    margin-bottom:20px;
+.article{
+
+background:white;
+
+margin-top:-70px;
+
+position:relative;
+
+border-radius:25px;
+
+padding:50px;
+
+box-shadow:0 15px 40px rgba(0,0,0,.08);
 
 }
 
-/* =========================================================
-   QUOTE
-========================================================= */
+.article p{
+
+margin-bottom:22px;
+
+font-size:18px;
+
+text-align:justify;
+
+}
+
+.article h2{
+
+margin:40px 0 15px;
+
+font-size:32px;
+
+color:#0f172a;
+
+}
 
 .quote{
 
-    background:#eff6ff;
+background:#eff6ff;
 
-    border-left:5px solid #2563eb;
+padding:30px;
 
-    padding:20px;
+border-left:6px solid #2563eb;
 
-    margin:35px 0;
+border-radius:15px;
 
-    border-radius:12px;
+margin:40px 0;
 
-    font-style:italic;
+font-style:italic;
 
-}
-
-/* =========================================================
-   TIPS BOX
-========================================================= */
-
-.tips{
-
-    background:#ecfeff;
-
-    border:1px solid #a5f3fc;
-
-    padding:25px;
-
-    border-radius:15px;
-
-    margin:35px 0;
+font-size:20px;
 
 }
 
-.tips h3{
-
-    margin-bottom:15px;
-
-    color:#0891b2;
-
-}
-
-/* =========================================================
-   ARTICLE RELATED
-========================================================= */
-
-.related{
-
-    margin-top:60px;
-
-}
-
-.related-grid{
-
-    display:grid;
-
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-
-    gap:20px;
-
-}
-
-.related-card{
-
-    background:#ffffff;
-
-    border-radius:15px;
-
-    padding:20px;
-
-    box-shadow:0 5px 20px rgba(0,0,0,.08);
-
-    transition:.3s;
-
-}
-
-.related-card:hover{
-
-    transform:translateY(-6px);
-
-}
-
-/* =========================================================
-   BUTTON
-========================================================= */
-
-.btn{
-
-    display:inline-block;
-
-    margin-top:30px;
-
-    background:#2563eb;
-
-    color:white;
-
-    padding:12px 22px;
-
-    border-radius:10px;
-
-    transition:.3s;
-
-}
-
-.btn:hover{
-
-    background:#1d4ed8;
-
-}
-
-/* =========================================================
-   FOOTER
-========================================================= */
-
-footer{
-
-    margin-top:80px;
-
-    background:#0f172a;
-
-    color:#cbd5e1;
-
-    text-align:center;
-
-    padding:35px;
-
-}
-
-/* =========================================================
-   RESPONSIVE
-========================================================= */
-
-@media(max-width:768px){
-
-    .menu{
-
-        display:none;
-
-    }
-
-    .article{
-
-        padding:25px;
-
-    }
-
-    .article h1{
-
-        font-size:30px;
-
-    }
-
-    .cover{
-
-        height:250px;
-
-    }
-
-}
-
-  <!DOCTYPE html>
-<html lang="id">
-
-<head>
-
-    <!-- ===================================== -->
-    <!-- META                                  -->
-    <!-- ===================================== -->
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>7 Tips Dating yang Sehat</title>
-
-    <!-- ===================================== -->
-    <!-- GOOGLE FONT                           -->
-    <!-- ===================================== -->
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-    <!-- ===================================== -->
-    <!-- CSS                                   -->
-    <!-- ===================================== -->
-
-    <style>
-
-        /* Tempel CSS yang saya kirim sebelumnya di sini */
-
-    </style>
+</style>
 
 </head>
 
 <body>
 
-<!-- ===================================== -->
-<!-- HEADER                                -->
-<!-- ===================================== -->
+<div id="progress"></div>
 
 <header>
 
-    <div class="container">
+<div class="container">
 
-        <nav>
+<nav>
 
-            <div class="logo">
-                DatingBlog
-            </div>
+<div class="logo">
 
-            <div class="menu">
+DatingBlog
 
-                <a href="index.html">Home</a>
-                <a href="#">Dating</a>
-                <a href="#">Relationship</a>
-                <a href="#">Love Tips</a>
-                <a href="#">About</a>
+</div>
 
-            </div>
+<div class="menu">
 
-        </nav>
+<a href="index.html">Home</a>
 
-    </div>
+<a href="#">Dating</a>
+
+<a href="#">Relationship</a>
+
+<a href="#">Love Tips</a>
+
+<a href="#">About</a>
+
+</div>
+
+</nav>
+
+</div>
 
 </header>
 
-<!-- ===================================== -->
-<!-- HERO                                  -->
-<!-- ===================================== -->
-
 <section class="hero">
 
-    <div class="container">
+<div class="container">
 
-        <div class="cover">
+<div class="hero-content">
 
-            Cover Artikel
+<span class="category">
 
-        </div>
+Dating
 
-    </div>
+</span>
 
-</section>
+<h1>
 
-<!-- ===================================== -->
-<!-- ARTICLE                               -->
-<!-- ===================================== -->
+7 Tips Dating yang Sehat agar Hubungan Lebih Harmonis
 
-<section class="article-header">
-    <h1>
-        7 Tips Dating yang Sehat agar Hubungan Lebih Nyaman
-    </h1>
+</h1>
 
 <div class="meta">
 
-    <span>By Admin</span>
+<span>👤 Admin</span>
 
-    <span>20 Juli 2026</span>
+<span>📅 20 Juli 2026</span>
+
+<span>⏱️ 8 Menit Dibaca</span>
+
+</div>
+
+</div>
 
 </div>
 
 </section>
+
+<div class="container">
+
+<article class="article">
+
+<p>
+
+Dating bukan hanya tentang menghabiskan waktu bersama pasangan, tetapi juga tentang membangun hubungan yang sehat, saling menghargai, dan menciptakan rasa nyaman. Hubungan yang baik membutuhkan komunikasi yang terbuka, kepercayaan, serta komitmen dari kedua belah pihak agar dapat berkembang menjadi hubungan yang lebih dewasa dan bahagia.
 
 </p>
 
@@ -462,9 +323,12 @@ footer{
 
 <p>
 
-Kesalahan yang sering terjadi saat mulai berkencan adalah berusaha menjadi orang lain agar terlihat sempurna. Padahal hubungan yang sehat dibangun atas dasar kejujuran.
+Menjadi diri sendiri merupakan fondasi utama dalam sebuah hubungan yang sehat. Tidak perlu berpura-pura menjadi orang lain hanya demi mendapatkan perhatian pasangan. Kejujuran sejak awal akan menciptakan rasa percaya yang lebih kuat dan membuat hubungan terasa lebih nyaman dalam jangka panjang.
 
-Menjadi diri sendiri akan membuat pasangan mengenal siapa Anda sebenarnya dan mengurangi rasa lelah karena harus berpura-pura.
+</p>
+<p>
+
+Ketika kita merasa nyaman menjadi diri sendiri, pasangan juga akan lebih mudah mengenal karakter, kelebihan, dan kekurangan kita. Hubungan yang dibangun atas dasar kejujuran biasanya lebih kuat dibandingkan hubungan yang dipenuhi kepura-puraan.
 
 </p>
 
@@ -476,258 +340,128 @@ Menjadi diri sendiri akan membuat pasangan mengenal siapa Anda sebenarnya dan me
 
 <p>
 
-Komunikasi merupakan fondasi utama dalam setiap hubungan.
+Komunikasi merupakan kunci utama dalam setiap hubungan. Luangkan waktu untuk saling mendengarkan, berbagi cerita, dan menyampaikan perasaan dengan jujur tanpa menyakiti pasangan. Hindari memendam masalah terlalu lama karena hal tersebut dapat memicu kesalahpahaman.
 
-Beberapa hal yang perlu diperhatikan:
-
-Dengarkan pasangan tanpa memotong pembicaraan.
-Sampaikan pendapat dengan sopan.
-Hindari berasumsi sebelum mengetahui fakta.
-Jangan memendam masalah terlalu lama.
-
-Komunikasi yang terbuka membantu mengurangi kesalahpahaman.
-</h2>
+</p>
 
 <p>
 
-3. Saling Menghargai Privasi
+Dengan komunikasi yang terbuka, setiap konflik akan lebih mudah diselesaikan dan hubungan menjadi semakin dewasa.
 
-</h2>
-
-<p>
-
-Meskipun sudah menjalin hubungan, setiap orang tetap membutuhkan ruang pribadi.
-
-Contohnya:
-
-Menghargai waktu bersama keluarga.
-Tidak memaksa mengetahui semua kata sandi akun.
-Memberi kesempatan untuk menjalankan hobi masing-masing.
-
-Kepercayaan yang sehat biasanya lebih kuat daripada rasa ingin mengontrol pasangan.
 </p>
 
 <h2>
-4. Habiskan Waktu Berkualitas
+
+3. Luangkan Quality Time
+
 </h2>
 
 <p>
-Dating tidak selalu harus mahal.
 
-Beberapa ide kegiatan sederhana:
+Kesibukan sering kali membuat pasangan jarang memiliki waktu bersama. Padahal, quality time merupakan salah satu cara terbaik untuk mempererat hubungan. Tidak harus selalu pergi ke tempat mewah, menghabiskan waktu sambil berbicara, memasak bersama, atau berjalan santai sudah cukup menciptakan momen yang berharga.
 
-Jalan santai di taman.
-Menonton film favorit.
-Memasak bersama.
-Bermain board game.
-Berolahraga bersama.
-Menikmati kopi di kafe.
-
-Yang terpenting adalah kualitas interaksi, bukan besarnya biaya.
 </p>
 
 <h2>
-5. Belajar Menyelesaikan Konflik  
+
+4. Tetap Saling Menghargai
+
 </h2>
 
 <p>
-Perbedaan pendapat adalah hal yang wajar.
 
-Saat terjadi konflik:
+Menghargai pasangan berarti menerima pendapat, pilihan, dan ruang pribadinya. Jangan memaksakan kehendak sendiri atau mengontrol pasangan secara berlebihan. Hubungan yang sehat dibangun di atas rasa saling percaya dan menghormati.
 
-</li>Hindari berkata kasar.</li>
-</li>Fokus pada masalah, bukan menyerang pribadi pasangan.</li>
-</li>Berikan waktu untuk menenangkan diri jika emosi sedang tinggi.</li>
-</li>Cari solusi yang menguntungkan kedua belah pihak.</li>
-
-Hubungan yang sehat bukan berarti tanpa konflik, tetapi mampu menyelesaikannya dengan baik.
 </p>
 
 <h2>
- 6. Tetapkan Batasan yang Jelas
+
+5. Jangan Takut Meminta Maaf
+
 </h2>
 
 <p>
-Setiap hubungan membutuhkan batasan yang disepakati bersama.
 
-Misalnya:
+Tidak ada manusia yang sempurna. Ketika melakukan kesalahan, jangan ragu meminta maaf dengan tulus. Sebaliknya, belajarlah juga untuk memaafkan ketika pasangan menunjukkan penyesalan dan berusaha memperbaiki kesalahannya.
 
-Cara berkomunikasi.
-Waktu bertemu.
-Penggunaan media sosial.
-Hubungan dengan teman lawan jenis.
-
-Dengan adanya batasan, kedua pihak dapat merasa lebih nyaman dan saling menghormati.
 </p>
 
 <h2>
-7. Nikmati Prosesnya
+
+Kesimpulan
+
 </h2>
 
 <p>
-Tidak semua hubungan harus berjalan terburu-buru.
 
-Luangkan waktu untuk saling mengenal, memahami nilai hidup masing-masing, dan membangun kepercayaan secara bertahap. Hubungan yang berkembang secara alami biasanya memiliki fondasi yang lebih kuat.
+Hubungan yang sehat tidak dibangun hanya dengan kata-kata manis atau hadiah yang mahal, tetapi melalui perhatian, komunikasi, kepercayaan, dan komitmen yang dilakukan secara konsisten setiap hari. Setiap pasangan tentu akan menghadapi berbagai tantangan, namun dengan sikap saling menghargai dan mau memahami satu sama lain, setiap masalah dapat diselesaikan dengan cara yang lebih dewasa.
+
 </p>
 
-<h2>
-Kesimpulan pertama
-</h2>
-
 <p>
-            Dating merupakan kesempatan untuk membangun hubungan yang sehat melalui komunikasi, rasa saling percaya, dan penghargaan terhadap pasangan. Dengan menjadi diri sendiri, menghargai batasan, dan menikmati setiap proses, hubungan akan terasa lebih nyaman dan memiliki peluang lebih besar untuk berkembang secara positif.
+
+Tidak ada hubungan yang benar-benar sempurna. Perbedaan pendapat, kesalahpahaman, hingga konflik merupakan bagian dari perjalanan yang justru dapat memperkuat ikatan apabila dihadapi bersama. Oleh karena itu, penting untuk selalu terbuka dalam berkomunikasi, menjaga kepercayaan, serta memberikan ruang bagi pasangan untuk berkembang tanpa merasa dikekang.
+
 </p>
 
-<h2>
-   Kesimpulan kedua
-</h2>
+<p>
+
+Selain membangun hubungan dengan pasangan, jangan lupakan pentingnya terus mengembangkan diri. Menjadi pribadi yang lebih baik setiap hari akan memberikan dampak positif bagi hubungan yang sedang dijalani. Hubungan yang sehat adalah hubungan yang membuat kedua belah pihak merasa dihargai, didukung, dan nyaman menjadi diri sendiri.
+
+</p>
 
 <p>
-Membangun hubungan yang sehat bukan hanya tentang menemukan seseorang yang sesuai dengan keinginan kita, tetapi juga tentang bagaimana dua orang mampu tumbuh dan berkembang bersama. Dalam setiap hubungan pasti akan ada perbedaan pendapat, tantangan, bahkan kesalahpahaman. Hal tersebut merupakan bagian yang wajar dari sebuah proses. Yang terpenting adalah bagaimana kedua belah pihak mampu menyelesaikan setiap masalah dengan komunikasi yang baik, saling menghargai, dan tetap menjaga rasa percaya satu sama lain.
 
-Hubungan yang harmonis tidak dibangun melalui perhatian yang besar sesekali, melainkan melalui tindakan-tindakan kecil yang dilakukan secara konsisten setiap hari. Menghargai pasangan, meluangkan waktu bersama, mendengarkan ketika pasangan berbicara, serta memberikan dukungan saat menghadapi masa sulit merupakan contoh sederhana yang dapat memperkuat ikatan emosional. Sikap-sikap kecil seperti inilah yang sering kali menjadi fondasi utama hubungan yang bertahan lama.
+Semoga tips yang telah dibahas dalam artikel ini dapat menjadi inspirasi bagi siapa saja yang sedang menjalani masa pendekatan maupun telah memiliki pasangan. Ingatlah bahwa cinta yang kuat tidak lahir dari kesempurnaan, melainkan dari kesediaan untuk terus belajar, memperbaiki diri, dan bertumbuh bersama dalam setiap langkah kehidupan.
 
-Selain itu, penting untuk tetap menjadi diri sendiri dan tidak kehilangan identitas hanya demi menyenangkan pasangan. Hubungan yang sehat memberikan ruang bagi masing-masing individu untuk berkembang, mengejar impian, dan mempertahankan kehidupan sosialnya. Ketika kedua pihak saling mendukung tanpa merasa terkekang, hubungan akan terasa lebih nyaman, dewasa, dan penuh rasa saling menghormati.
+</p>
 
-Pada akhirnya, tidak ada hubungan yang benar-benar sempurna. Setiap pasangan memiliki perjalanan, tantangan, dan cerita yang berbeda-beda. Daripada terus membandingkan hubungan dengan orang lain, lebih baik fokus membangun komunikasi yang jujur, menjaga kepercayaan, dan menciptakan kebahagiaan bersama. Dengan menerapkan prinsip-prinsip tersebut secara konsisten, hubungan yang dijalani tidak hanya akan terasa lebih harmonis, tetapi juga memiliki peluang yang lebih besar untuk bertahan dalam jangka panjang dan membawa kebahagiaan bagi kedua belah pihak.
+<hr style="margin:50px 0;border:none;border-top:1px solid #ddd;">
 
-Semoga berbagai tips yang telah dibahas dalam artikel ini dapat menjadi panduan bagi Anda yang sedang menjalani masa pendekatan maupun telah memiliki pasangan. Ingatlah bahwa hubungan yang sehat bukanlah hubungan yang bebas dari masalah, melainkan hubungan yang mampu menghadapi setiap tantangan dengan sikap dewasa, rasa saling menghargai, dan komitmen untuk terus bertumbuh bersama. Dengan usaha yang dilakukan oleh kedua belah pihak, hubungan yang kuat, nyaman, dan penuh kebahagiaan bukanlah sesuatu yang mustahil untuk diwujudkan.
-            
+<h2>
+
 <div class="quote">
 
-"Hubungan yang sehat bukan tentang menemukan pasangan yang sempurna, tetapi belajar saling memahami."
+"Cinta yang sehat bukan tentang siapa yang selalu benar, tetapi tentang bagaimana dua orang saling memahami dan bertumbuh bersama."
 
-   </p>
-   
-<h2>
- </div>
+</div>
 
-<div class="tips">
+<div style="background:#ecfeff;padding:30px;border-radius:18px;margin:40px 0;border:1px solid #b6f0ff;">
 
-<h3>
+<h2 style="margin-top:0;color:#0891b2;">
 
 💡 Tips Singkat
 
-</h3>
+</h2>
 
-<ul>
+<ul style="padding-left:20px;line-height:2;">
 
-<li>Jangan terburu-buru dalam hubungan.</li>
+<li>Jadilah diri sendiri.</li>
 
-<li>Bangun komunikasi yang baik.</li>
+<li>Bangun komunikasi yang jujur.</li>
 
-<li>Saling menghargai privasi.</li>
+<li>Luangkan waktu bersama.</li>
 
-<li>Belajar mendengarkan pasangan.</li>
+<li>Hormati privasi pasangan.</li>
+
+<li>Belajar meminta maaf.</li>
 
 </ul>
 
 </div>
 
-<h2>
-<p>
+<hr style="margin:50px 0;border:none;border-top:1px solid #ddd;">
 
-
-</p>
-
-</div>
-
-<a href="index.html" class="btn">
-
-← Kembali ke Beranda
-
-</a>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ===================================== -->
-<!-- RELATED ARTICLE                       -->
-<!-- ===================================== -->
-
-<section class="related">
-
-<div class="container">
-
-<h2>
-
-Artikel Terkait
+📢 Bagikan Artikel Ini
 
 </h2>
 
-<br>
+<div style="display:flex;gap:15px;flex-wrap:wrap;margin-top:20px;">
 
-<div class="related-grid">
+<a href="#" style="padding:12px 22px;background:#25D366;color:#fff;border-radius:10px;">WhatsApp</a>
 
-<div class="related-card">
+<a href="#" style="padding:12px 22px;background:#1877F2;color:#fff;border-radius:10px;">Facebook</a>
 
-<h3>
-
-Green Flag dalam Hubungan
-
-</h3>
-
-<p>
-
-Coming Soon...
-
-</p>
+<a href="#" style="padding:12px 22px;background:#111;color:#fff;border-radius:10px;">X</a>
 
 </div>
-
-<div class="related-card">
-
-<h3>
-
-Cara PDKT yang Elegan
-
-</h3>
-
-<p>
-
-Coming Soon...
-
-</p>
-
-</div>
-
-<div class="related-card">
-
-<h3>
-
-Kesalahan Saat First Date
-
-</h3>
-
-<p>
-
-Coming Soon...
-
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ===================================== -->
-<!-- FOOTER                                -->
-<!-- ===================================== -->
-
-<footer>
-
-Copyright © 2026 DatingBlog
-
-</footer>
-
-</body>
-
-</html>
-
-</style>

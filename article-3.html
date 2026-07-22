@@ -31,9 +31,14 @@ scroll-behavior:smooth;
 
 body{
 font-family:'Poppins',sans-serif;
-background:#f4f7fc;
+background:#f5f7fb;
 color:#1f2937;
-line-height:1.9;
+line-height:1.8;
+}
+
+a{
+text-decoration:none;
+color:inherit;
 }
 
 img{
@@ -41,10 +46,49 @@ max-width:100%;
 display:block;
 }
 
-a{
-text-decoration:none;
-color:inherit;
+.container{
+width:min(1150px,94%);
+margin:auto;
 }
+
+/* ================= HEADER ================= */
+
+header{
+position:sticky;
+top:0;
+background:#ffffffee;
+backdrop-filter:blur(12px);
+box-shadow:0 5px 18px rgba(0,0,0,.08);
+z-index:999;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 0;
+}
+
+.logo{
+font-size:30px;
+font-weight:700;
+color:#2563eb;
+}
+
+.menu{
+display:flex;
+gap:30px;
+}
+
+.menu a{
+font-weight:500;
+transition:.3s;
+}
+
+.menu a:hover{
+color:#2563eb;
+}
+
 
 .hero{
 
@@ -200,9 +244,39 @@ font-size:17px;
 </head>
 
 <body>
+<div id="progress"></div>
 
+<header>
+
+<div class="container">
+
+<nav>
+
+<div class="logo">
+
+DatingBlog
+
+</div>
+
+<div class="menu">
+
+<a href="index.html">Home</a>
+
+<a href="#">Dating</a>
+
+<a href="#">Relationship</a>
+
+</div>
+
+</nav>
+
+</div>
+
+</header>
 <section class="hero">
-
+  
+<div class="container">
+  
 <div class="hero-content">
 
 <h1>
@@ -216,10 +290,6 @@ Kesalahan Saat PDKT yang Sering Dilakukan Tanpa Disadari
 &nbsp;&nbsp;|&nbsp;&nbsp;
 
 📅 24 Juli 2026
-
-&nbsp;&nbsp;|&nbsp;&nbsp;
-
-⏱ 7 Menit Membaca
 
 </div>
 

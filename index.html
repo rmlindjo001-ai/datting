@@ -4,13 +4,15 @@
 <head>
 
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Dating Blog | Tips Relationship & Love</title>
+<title>DatingBlog | Inspirasi Hubungan Sehat</title>
 
-<meta name="description" content="Artikel seputar Dating, Relationship, Love Tips dan Lifestyle">
+<meta name="description" content="DatingBlog membahas tips dating, relationship, cinta, komunikasi, dan inspirasi hubungan yang sehat.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
+
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -18,549 +20,274 @@
 <style>
 
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 html{
-scroll-behavior:smooth;
+    scroll-behavior:smooth;
 }
 
 body{
-
-font-family:'Poppins',sans-serif;
-
-background:#f4f7fb;
-
-color:#1f2937;
-
-line-height:1.8;
-
-overflow-x:hidden;
-
-}
-
-img{
-
-display:block;
-
-max-width:100%;
-
+    font-family:'Poppins',sans-serif;
+    background:#f5f7fb;
+    color:#1f2937;
+    line-height:1.7;
 }
 
 a{
+    text-decoration:none;
+    color:inherit;
+}
 
-text-decoration:none;
-
-color:inherit;
-
+img{
+    display:block;
+    max-width:100%;
 }
 
 .container{
-
-width:min(1200px,92%);
-
-margin:auto;
-
+    width:min(1200px,94%);
+    margin:auto;
 }
-
-/* =========================
-HEADER
-========================= */
+/* ===========================
+   HEADER
+=========================== */
 
 header{
-
-position:sticky;
-
-top:0;
-
-z-index:999;
-
-background:#ffffffee;
-
-backdrop-filter:blur(12px);
-
-box-shadow:0 8px 25px rgba(0,0,0,.08);
-
+    background:#fff;
+    position:sticky;
+    top:0;
+    z-index:999;
+    box-shadow:0 3px 18px rgba(0,0,0,.08);
 }
 
 nav{
-
-display:flex;
-
-justify-content:space-between;
-
-align-items:center;
-
-padding:18px 0;
-
+    height:75px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
 }
 
-.logo{
-
-font-size:30px;
-
-font-weight:800;
-
-color:#2563eb;
-
-letter-spacing:.5px;
-
+.logo img{
+    height:55px;
 }
 
 .menu{
-
-display:flex;
-
-gap:35px;
-
+    display:flex;
+    gap:28px;
+    align-items:center;
 }
 
 .menu a{
-
-font-weight:500;
-
-transition:.3s;
-
+    font-size:15px;
+    font-weight:500;
+    transition:.3s;
 }
 
 .menu a:hover{
-
-color:#2563eb;
-
+    color:#2563eb;
 }
 
-/* =========================
-FEATURED
-========================= */
+
+/* ===========================
+   HERO
+=========================== */
 
 .featured{
-
-margin:5px auto;
-    
-width: 100%;
-    
-aspect-ratio: 95 / 8;
-    
-object-fit: cover;
-    
-object-position: center;
-    
-display: block;
-    
- transition: .6s
+    margin:25px 0 40px;
 }
 
 .featured-card{
-
-position:relative;
-
-display:block;
-
-overflow:hidden;
-
-border-radius:25px;
-
-box-shadow:0 20px 60px rgba(0,0,0,.18);
-
-transition:.4s;
-
-}
-
-.featured-card:hover{
-
-   margin:5px auto;
-
-    width:100%;
-
-    aspect-ratio: 95 / 8;
-
-    object-fit:cover;
-
-    object-position:center;
-
     display:block;
-
-    transition:.6s;
-
+    overflow:hidden;
+    border-radius:22px;
+    box-shadow:0 20px 50px rgba(0,0,0,.15);
 }
 
 .featured-card img{
-    
-    margin:5px auto;
-
     width:100%;
-
-    aspect-ratio: 95 / 8;
-
+    height:340px;
     object-fit:cover;
-
-    object-position:center;
-
-    display:block;
-
-    transition:.6s;
-
+    transition:.5s;
 }
 
 .featured-card:hover img{
-
-margin:5px auto;
-    
-width: 100%;
-    
-aspect-ratio: 95 / 8;
-    
-object-fit: cover;
-    
-object-position: center;
-    
-display: block;
-    
- transition: .6s
-
+    transform:scale(1.03);
 }
 
-.featured-overlay{
 
-position:absolute;
-
-left:0;
-
-right:0;
-
-bottom:0;
-
-padding:60px;
-
-background:linear-gradient(
-
-transparent,
-
-rgba(0,0,0,.92)
-
-);
-
-color:#fff;
-
-}
-
-.featured-overlay h1{
-
-font-size:52px;
-
-line-height:1.2;
-
-margin-bottom:20px;
-
-max-width:800px;
-
-}
-
-.featured-overlay p{
-
-max-width:700px;
-
-opacity:.95;
-
-font-size:18px;
-
-margin-bottom:25px;
-
-}
-
-.featured-meta{
-
-display:flex;
-
-gap:25px;
-
-flex-wrap:wrap;
-
-font-size:14px;
-
-}
-
-/* =========================
-CONTENT
-========================= */
+/* ===========================
+   LAYOUT
+=========================== */
 
 .content{
-
-display:grid;
-
-grid-template-columns:2fr 1fr;
-
-gap:35px;
-
-margin:60px auto;
-
+    display:grid;
+    grid-template-columns:2fr 340px;
+    gap:35px;
+    align-items:start;
 }
 
-.article-grid{
 
-display:grid;
+/* ===========================
+   ARTICLE
+=========================== */
 
-grid-template-columns:repeat(2,1fr);
+.section-title{
+    font-size:30px;
+    font-weight:700;
+    margin-bottom:25px;
+}
 
-gap:25px;
-
+.article-list{
+    display:flex;
+    flex-direction:column;
+    gap:28px;
 }
 
 .card{
-
-display:block;
-
-background:#fff;
-
-border-radius:22px;
-
-overflow:hidden;
-
-box-shadow:0 12px 35px rgba(0,0,0,.08);
-
-transition:.35s;
-
+    display:flex;
+    gap:22px;
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.35s;
 }
 
 .card:hover{
-
-transform:translateY(-8px);
-
-box-shadow:0 20px 45px rgba(0,0,0,.12);
-
+    transform:translateY(-6px);
 }
 
 .card img{
-
-width:100%;
-
-height:220px;
-
-object-fit:cover;
-
-transition:.5s;
-
-}
-
-.card:hover img{
-
-transform:scale(1.05);
-
+    width:260px;
+    height:180px;
+    object-fit:cover;
 }
 
 .card-content{
-
-padding:22px;
-
+    padding:22px;
+    flex:1;
 }
 
 .tag{
-
-display:inline-block;
-
-background:#dbeafe;
-
-color:#2563eb;
-
-padding:6px 14px;
-
-border-radius:25px;
-
-font-size:13px;
-
-margin-bottom:15px;
-
-font-weight:600;
-
+    display:inline-block;
+    background:#dbeafe;
+    color:#2563eb;
+    padding:6px 14px;
+    border-radius:50px;
+    font-size:12px;
+    margin-bottom:12px;
 }
 
 .card h2{
-
-font-size:24px;
-
-margin-bottom:12px;
-
+    font-size:26px;
+    line-height:1.3;
+    margin-bottom:12px;
 }
 
 .card p{
-
-color:#64748b;
-
-font-size:15px;
-
-margin-bottom:15px;
-
+    color:#64748b;
+    margin-bottom:15px;
 }
 
 .meta{
-
-font-size:13px;
-
-color:#94a3b8;
-
+    font-size:13px;
+    color:#94a3b8;
 }
 
-/* =========================
-SIDEBAR
-========================= */
 
-.sidebar{
+/* ===========================
+   SIDEBAR
+=========================== */
 
-display:flex;
-
-flex-direction:column;
-
-gap:25px;
-
+aside{
+    position:sticky;
+    top:95px;
 }
 
 .box{
-
-background:#fff;
-
-padding:25px;
-
-border-radius:20px;
-
-box-shadow:0 12px 35px rgba(0,0,0,.08);
-
+    background:#fff;
+    border-radius:20px;
+    padding:25px;
+    margin-bottom:25px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
 }
 
 .box h3{
-
-margin-bottom:18px;
-
-color:#2563eb;
-
+    color:#2563eb;
+    margin-bottom:18px;
 }
 
 .box ul{
-
-list-style:none;
-
+    list-style:none;
 }
 
 .box li{
-
-padding:12px 0;
-
-border-bottom:1px solid #eee;
-
+    padding:12px 0;
+    border-bottom:1px solid #eef2f7;
 }
 
 .box li:last-child{
-
-border:none;
-
+    border-bottom:none;
 }
-/* =========================
-FOOTER
-========================= */
+
+
+/* ===========================
+   FOOTER
+=========================== */
 
 footer{
-
-background:#0f172a;
-
-color:#cbd5e1;
-
-padding:50px 20px;
-
-margin-top:80px;
-
-text-align:center;
-
+    margin-top:70px;
+    background:#0f172a;
+    color:#fff;
+    text-align:center;
+    padding:45px;
 }
 
-footer p{
 
-margin-top:10px;
+/* ===========================
+   RESPONSIVE
+=========================== */
 
-opacity:.8;
-
-}
-
-/* =========================
-RESPONSIVE
-========================= */
-
-@media(max-width:991px){
+@media(max-width:900px){
 
 .content{
-
-grid-template-columns:1fr;
-
+    grid-template-columns:1fr;
 }
 
-.article-grid{
+aside{
+    position:static;
+}
 
-grid-template-columns:1fr;
+.card{
+    flex-direction:column;
+}
 
+.card img{
+    width:100%;
+    height:220px;
 }
 
 .featured-card img{
-
-height:420px;
-
+    height:220px;
 }
-
-.featured-overlay{
-
-padding:35px;
-
-}
-
-.featured-overlay h1{
-
-font-size:38px;
-
-}
-
-}
-
-@media(max-width:768px){
 
 .menu{
-
-display:none;
-
+    gap:18px;
 }
 
-.logo{
-
-font-size:26px;
-
+.section-title{
+    font-size:26px;
 }
 
-.featured-card img{
-
-height:320px;
-
-}
-
-.featured-overlay{
-
-padding:25px;
-
-}
-
-.featured-overlay h1{
-
-font-size:28px;
-
-}
-
-.featured-overlay p{
-
-font-size:15px;
-
+.card h2{
+    font-size:22px;
 }
 
 }
 
 </style>
-
 </head>
 
 <body>
@@ -571,23 +298,19 @@ font-size:15px;
 
 <nav>
 
-<div class="logo">
-
-DatingBlog
-
-</div>
+<a href="index.html" class="logo">
+    <img src="images/logo.png" alt="DatingBlog">
+</a>
 
 <div class="menu">
 
-<a href="#">Home</a>
+<a href="index.html">Home</a>
 
-<a href="#">Dating</a>
+<a href="#">Artikel</a>
 
-<a href="#">Relationship</a>
+<a href="#">Kategori</a>
 
-<a href="#">Love Tips</a>
-
-<a href="#">About</a>
+<a href="#">Tentang</a>
 
 </div>
 
@@ -597,203 +320,138 @@ DatingBlog
 
 </header>
 
+
 <div class="container">
 
-<section class="featured">
-   
-        <img src="thumbnail.png"
 
-    </a>
+<!-- HERO -->
+
+<section class="featured">
+
+<a href="article-1.html" class="featured-card">
+
+<img src="images/article-1.png" alt="7 Tips Dating yang Sehat">
+
+</a>
 
 </section>
 
+
+<!-- CONTENT -->
+
 <div class="content">
+
+
+<!-- KIRI -->
 
 <main>
 
-<h2 style="margin-bottom:25px;">
-
-Artikel Terbaru
-
+<h2 class="section-title">
+📰 Artikel Terbaru
 </h2>
 
-<div class="article-grid">
-<!-- ===========================
-ARTICLE 1
-=========================== -->
-
+<div class="article-list">
 <a href="article-1.html" class="card">
 
-<img src="article-1.png" alt="7 Tips Dating yang Sehat">
+    <img src="article-1.png" alt="Article 1">
 
-<div class="card-content">
+    <div class="card-content">
 
-<h2>
+        <span class="tag">Dating</span>
 
-7 Tips Dating yang Sehat agar Hubungan Lebih Harmonis
+        <h2>7 Tips Dating yang Sehat agar Hubungan Lebih Harmonis</h2>
 
-</h2>
+        <p>
+            Pelajari cara membangun hubungan yang sehat, saling percaya, dan nyaman bersama pasangan melalui tips sederhana yang mudah diterapkan.
+        </p>
 
-<p>
+        <div class="meta">
+            👤 Admin • 📅 20 Juli 2026 
+        </div>
 
-Pelajari cara membangun hubungan yang sehat, saling menghargai, dan membuat hubungan semakin kuat setiap hari.
-
-</p>
-
-<div class="meta">
-
-👤 Admin • 📅 20 Juli 2026
-
-</div>
-
-</div>
+    </div>
 
 </a>
 
-<!-- ===========================
-ARTICLE 2
-=========================== -->
+
 
 <a href="article-2.html" class="card">
 
-<img src="article-2.png" alt="Relationship">
+    <img src="article-2.png" alt="Article 2">
 
-<h2>
+    <div class="card-content">
 
-5 Cara Menjaga Hubungan Tetap Awet
+        <span class="tag">Relationship</span>
 
-</h2>
+        <h2>5 Cara Menjaga Hubungan Tetap Awet</h2>
 
-<p>
+        <p>
+            Banyak orang gagal membangun hubungan karena melakukan kesalahan kecil saat masa pendekatan. Pelajari cara menghindarinya.
+        </p>
 
-Hubungan yang sehat membutuhkan komunikasi, kepercayaan, dan komitmen dari kedua pasangan.
+        <div class="meta">
+            👤 Admin • 📅 22 Juli 2026 
+        </div>
 
-</p>
-
-<div class="meta">
-
-👤 Admin • 📅 18 Juli 2026
-
-</div>
-
-</div>
+    </div>
 
 </a>
 
-<!-- ===========================
-ARTICLE 3
-=========================== -->
+
 
 <a href="article-3.html" class="card">
 
-<img src="images/article-3.png" alt="Love">
+    <img src="article-2.png" alt="Article 3">
 
-<div class="card-content">
+    <div class="card-content">
 
-<span class="tag">Love Tips</span>
+        <span class="tag">Love</span>
 
-<h2>
+        <h2>Kesalahan Saat PDKT</h2>
 
-Kesalahan Saat PDKT yang Harus Dihindari
+        <p>
+            Komunikasi merupakan pondasi hubungan yang sehat. Simak beberapa cara sederhana untuk meningkatkan kualitas komunikasi dengan pasangan.
+        </p>
 
-</h2>
+        <div class="meta">
+            👤 Admin • 📅 24 Juli 2026 
+        </div>
 
-<p>
-
-Banyak orang gagal saat pendekatan karena melakukan kesalahan yang sebenarnya mudah dihindari.
-
-</p>
-
-<div class="meta">
-
-👤 Admin • 📅 16 Juli 2026
-
-</div>
-
-</div>
+    </div>
 
 </a>
 
-<!-- ===========================
-ARTICLE 4
-=========================== -->
-
-<a href="article-4.html" class="card">
-
-<img src="images/article-4.png" alt="Couple">
-
-<div class="card-content">
-
-<span class="tag">Dating</span>
-
-<h2>
-
-Ide Kencan Romantis Tanpa Harus Mahal
-
-</h2>
-
-<p>
-
-Kencan romantis tidak selalu membutuhkan biaya besar. Yang terpenting adalah kebersamaan.
-
-</p>
-
-<div class="meta">
-
-👤 Admin • 📅 14 Juli 2026
-
-</div>
-
-</div>
-
-</a>
 </div>
 
 </main>
 
-<aside class="sidebar">
+
+
+<!-- SIDEBAR -->
+
+<aside>
 
 <div class="box">
 
-<h3>
-🔥 Artikel Populer
-</h3>
+<h3>🔥 Artikel Populer</h3>
 
 <ul>
 
-<li>
-<a href="article-1.html">
-7 Tips Dating yang Sehat
-</a>
-</li>
+<li><a href="article-1.html">7 Tips Dating yang Sehat agar Hubungan Lebih Harmonis</a></li>
 
-<li>
-<a href="article-2.html">
-5 Cara Menjaga Hubungan Tetap Awet
-</a>
-</li>
+<li><a href="article-2.html">5 Cara Menjaga Hubungan Tetap Awet</a></li>
 
-<li>
-<a href="article-3.html">
-Kesalahan Saat PDKT
-</a>
-</li>
-
-<li>
-<a href="article-4.html">
-Ide Kencan Romantis
-</a>
-</li>
+<li><a href="article-3.html"></a>Kesalahan Saat PDKT</li>
 
 </ul>
 
 </div>
 
+
+
 <div class="box">
 
-<h3>
-📂 Kategori
-</h3>
+<h3>📂 Kategori</h3>
 
 <ul>
 
@@ -803,208 +461,34 @@ Ide Kencan Romantis
 
 <li>Love Tips</li>
 
-<li>Lifestyle</li>
-
 <li>Komunikasi</li>
 
 </ul>
 
 </div>
 
-<div class="box">
-
-<h3>
-💙 Tentang Website
-</h3>
-
-<p>
-
-DatingBlog merupakan website yang membahas berbagai tips dating, relationship, komunikasi pasangan, hingga lifestyle untuk membantu membangun hubungan yang sehat dan harmonis.
-
-</p>
-
-</div>
-
 </aside>
 
 </div>
+</div>
+
 <footer>
 
 <div class="container">
 
-<h2 style="color:#fff;margin-bottom:10px;">
-
-DatingBlog
-
-</h2>
+<h2 style="margin-bottom:10px;">DatingBlog</h2>
 
 <p>
-
-Portal artikel seputar Dating, Relationship, Love Tips & Lifestyle.
-
+Temukan berbagai artikel seputar hubungan, dating, komunikasi, dan tips membangun hubungan yang sehat.
 </p>
 
-<p style="margin-top:20px;font-size:14px;">
-
+<p style="margin-top:20px;font-size:14px;opacity:.8;">
 © 2026 DatingBlog. All Rights Reserved.
-
 </p>
 
 </div>
 
 </footer>
-
-<button id="topBtn">
-
-↑
-
-</button>
-
-<style>
-
-#topBtn{
-
-position:fixed;
-
-right:25px;
-
-bottom:25px;
-
-width:52px;
-
-height:52px;
-
-border:none;
-
-border-radius:50%;
-
-background:#2563eb;
-
-color:#fff;
-
-font-size:22px;
-
-cursor:pointer;
-
-display:none;
-
-box-shadow:0 10px 30px rgba(0,0,0,.25);
-
-transition:.3s;
-
-z-index:999;
-
-}
-
-#topBtn:hover{
-
-transform:translateY(-5px);
-
-background:#1d4ed8;
-
-}
-
-.progress{
-
-position:fixed;
-
-top:0;
-
-left:0;
-
-height:4px;
-
-width:0;
-
-background:#2563eb;
-
-z-index:9999;
-
-}
-
-.fade{
-
-opacity:0;
-
-transform:translateY(40px);
-
-transition:.8s;
-
-}
-
-.fade.show{
-
-opacity:1;
-
-transform:translateY(0);
-
-}
-
-</style>
-
-<div class="progress" id="progress"></div>
-
-<script>
-
-const topBtn=document.getElementById("topBtn");
-
-window.addEventListener("scroll",()=>{
-
-if(window.scrollY>350){
-
-topBtn.style.display="block";
-
-}else{
-
-topBtn.style.display="none";
-
-}
-
-let winScroll=document.body.scrollTop||document.documentElement.scrollTop;
-
-let height=document.documentElement.scrollHeight-document.documentElement.clientHeight;
-
-let scrolled=(winScroll/height)*100;
-
-document.getElementById("progress").style.width=scrolled+"%";
-
-});
-
-topBtn.onclick=()=>{
-
-window.scrollTo({
-
-top:0,
-
-behavior:"smooth"
-
-});
-
-};
-
-const observer=new IntersectionObserver(entries=>{
-
-entries.forEach(entry=>{
-
-if(entry.isIntersecting){
-
-entry.target.classList.add("show");
-
-}
-
-});
-
-});
-
-document.querySelectorAll(".card,.box,.featured-card").forEach(el=>{
-
-el.classList.add("fade");
-
-observer.observe(el);
-
-});
-
-</script>
 
 </body>
 

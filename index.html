@@ -136,23 +136,128 @@ FEATURED
 ========================= */
 
 .featured{
-    margin:10px auto 30px;
+
+margin:5px auto;
+    
+width: 100%;
+    
+aspect-ratio: 95 / 8;
+    
+object-fit: cover;
+    
+object-position: center;
+    
+display: block;
+    
+ transition: .6s
 }
 
 .featured-card{
-    display:block;
-    overflow:hidden;
-    border-radius:20px;
+
+position:relative;
+
+display:block;
+
+overflow:hidden;
+
+border-radius:25px;
+
+box-shadow:0 20px 60px rgba(0,0,0,.18);
+
+transition:.4s;
+
+}
+
+.featured-card:hover{
+
+transform:translateY(-8px);
+
 }
 
 .featured-card img{
-    width:100%;
-    aspect-ratio:60/6;
-    object-fit:cover;
-    object-position:center;
-    display:block;
-}
     
+    margin:5px auto;
+
+    width:100%;
+
+    aspect-ratio: 95 / 8;
+
+    object-fit:cover;
+
+    object-position:center;
+
+    display:block;
+
+    transition:.6s;
+
+}
+
+.featured-card:hover img{
+
+transform:scale(1.05);
+
+}
+
+.featured-overlay{
+
+position:absolute;
+
+left:0;
+
+right:0;
+
+bottom:0;
+
+padding:60px;
+
+background:linear-gradient(
+
+transparent,
+
+rgba(0,0,0,.92)
+
+);
+
+color:#fff;
+
+}
+
+.featured-overlay h1{
+
+font-size:52px;
+
+line-height:1.2;
+
+margin-bottom:20px;
+
+max-width:800px;
+
+}
+
+.featured-overlay p{
+
+max-width:700px;
+
+opacity:.95;
+
+font-size:18px;
+
+margin-bottom:25px;
+
+}
+
+.featured-meta{
+
+display:flex;
+
+gap:25px;
+
+flex-wrap:wrap;
+
+font-size:14px;
+
+}
+
 /* =========================
 CONTENT
 ========================= */
@@ -397,9 +502,6 @@ font-size:38px;
 display:none;
 
 }
-.featured-card img{
-    aspect-ratio:16/8;
-}
 
 .logo{
 
@@ -457,6 +559,8 @@ DatingBlog
 
 <a href="#">Dating</a>
 
+<a href="#">Relationship</a>
+
 <a href="#">Love Tips</a>
 
 <a href="#">About</a>
@@ -469,9 +573,11 @@ DatingBlog
 
 </header>
 
-<section class="featured">
+<div class="container">
 
-        <img src="article-1.png" alt="Dating">
+<section class="featured">
+   
+        <img src="article-1.png"
 
     </a>
 

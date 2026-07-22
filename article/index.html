@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>DatingBlog | Inspirasi Hubungan Sehat</title>
+
+<meta name="description" content="DatingBlog membahas tips dating, relationship, cinta, komunikasi, dan inspirasi hubungan yang sehat.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f5f7fb;
+    color:#1f2937;
+    line-height:1.7;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+img{
+    display:block;
+    max-width:100%;
+}
+
+.container{
+    width:min(1200px,94%);
+    margin:auto;
+}
+/* ===========================
+   HEADER
+=========================== */
+
+header{
+    background:#fff;
+    position:sticky;
+    top:0;
+    z-index:999;
+    box-shadow:0 3px 18px rgba(0,0,0,.08);
+}
+
+nav{
+    height:75px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo{
+font-size:30px;
+font-weight:700;
+color:#2563eb;
+}
+
+.menu{
+    display:flex;
+    gap:28px;
+    align-items:center;
+}
+
+.menu a{
+    font-size:15px;
+    font-weight:500;
+    transition:.3s;
+}
+
+.menu a:hover{
+    color:#2563eb;
+}
+
+
+/* ===========================
+   HERO
+=========================== */
+
+.featured{
+    margin:25px 0 40px;
+}
+
+.featured-card{
+    display:block;
+    overflow:hidden;
+    border-radius:22px;
+    box-shadow:0 20px 50px rgba(0,0,0,.15);
+}
+
+.featured-card img{
+    width:100%;
+    height:340px;
+    object-fit:cover;
+    transition:.5s;
+}
+
+.featured-card:hover img{
+    transform:scale(1.03);
+}
+
+
+/* ===========================
+   LAYOUT
+=========================== */
+
+.content{
+    display:grid;
+    grid-template-columns:2fr 340px;
+    gap:35px;
+    align-items:start;
+}
+
+
+/* ===========================
+   ARTICLE
+=========================== */
+
+.section-title{
+    font-size:30px;
+    font-weight:700;
+    margin-bottom:25px;
+}
+
+.article-list{
+    display:flex;
+    flex-direction:column;
+    gap:28px;
+}
+
+.card{
+    display:flex;
+    gap:22px;
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.35s;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+}
+
+.card img{
+    width:260px;
+    height:180px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:22px;
+    flex:1;
+}
+
+.tag{
+    display:inline-block;
+    background:#dbeafe;
+    color:#2563eb;
+    padding:6px 14px;
+    border-radius:50px;
+    font-size:12px;
+    margin-bottom:12px;
+}
+
+.card h2{
+    font-size:26px;
+    line-height:1.3;
+    margin-bottom:12px;
+}
+
+.card p{
+    color:#64748b;
+    margin-bottom:15px;
+}
+
+.meta{
+    font-size:13px;
+    color:#94a3b8;
+}
+
+
+/* ===========================
+   SIDEBAR
+=========================== */
+
+aside{
+    position:sticky;
+    top:95px;
+}
+
+.box{
+    background:#fff;
+    border-radius:20px;
+    padding:25px;
+    margin-bottom:25px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.box h3{
+    color:#2563eb;
+    margin-bottom:18px;
+}
+
+.box ul{
+    list-style:none;
+}
+
+.box li{
+    padding:12px 0;
+    border-bottom:1px solid #eef2f7;
+}
+
+.box li:last-child{
+    border-bottom:none;
+}
+
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+    margin-top:70px;
+    background:#0f172a;
+    color:#fff;
+    text-align:center;
+    padding:45px;
+}
+
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:900px){
+
+.content{
+    grid-template-columns:1fr;
+}
+
+aside{
+    position:static;
+}
+
+.card{
+    flex-direction:column;
+}
+
+.card img{
+    width:100%;
+    height:220px;
+}
+
+.featured-card img{
+    height:220px;
+}
+
+.menu{
+    gap:18px;
+}
+
+.section-title{
+    font-size:26px;
+}
+
+.card h2{
+    font-size:22px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="container">
+
+<nav>
+
+<div class="logo">
+    DatingBlog
+</div>
+    
+<div class="menu">
+
+<a href="index.html">Home</a>
+
+<a href="#">Artikel</a>
+
+<a href="#">Kategori</a>
+
+<a href="#">Tentang</a>
+
+</div>
+
+</nav>
+
+</div>
+
+</header>
+    
+<div class="container">
+
+
+<!-- HERO -->
+
+<section class="featured">
+
+<img src="images/thumbnail.webp"
+
+</a>
+
+</section>
+
+
+<!-- CONTENT -->
+
+<div class="content">
+
+
+<!-- KIRI -->
+
+<main>
+
+<h2 class="section-title">
+📰 Artikel Terbaru
+</h2>
+
+<div class="article-list">
+<a href="article/article-1.html" class="card">
+
+    <img src="images/article-1.webp" alt="Article 1">
+
+    <div class="card-content">
+
+        <span class="tag">Dating</span>
+
+        <h2>7 Tips Dating yang Sehat agar Hubungan Lebih Harmonis</h2>
+
+        <p>
+            Pelajari cara membangun hubungan yang sehat, saling percaya, dan nyaman bersama pasangan melalui tips sederhana yang mudah diterapkan.
+        </p>
+
+        <div class="meta">
+            👤 Admin • 📅 20 Juli 2026 
+        </div>
+
+    </div>
+
+</a>
+
+
+
+<a href="article/article-2.html" class="card">
+
+    <img src="images/article-2.webp" alt="Article 2">
+
+    <div class="card-content">
+
+        <span class="tag">Relationship</span>
+
+        <h2>5 Cara Menjaga Hubungan Tetap Awet</h2>
+
+        <p>
+            Banyak orang gagal membangun hubungan karena melakukan kesalahan kecil saat masa pendekatan. Pelajari cara menghindarinya.
+        </p>
+
+        <div class="meta">
+            👤 Admin • 📅 22 Juli 2026 
+        </div>
+
+    </div>
+
+</a>
+
+
+
+<a href="article/article-3.html" class="card">
+
+    <img src="images/article-3.webp" alt="Article 3">
+
+    <div class="card-content">
+
+        <span class="tag">Love</span>
+
+        <h2>5 Kesalahan Saat PDKT</h2>
+
+        <p>
+            Komunikasi merupakan pondasi hubungan yang sehat. Simak beberapa cara sederhana untuk meningkatkan kualitas komunikasi dengan pasangan.
+        </p>
+
+        <div class="meta">
+            👤 Admin • 📅 24 Juli 2026 
+        </div>
+
+    </div>
+
+</a>
+
+</div>
+
+</main>
+
+
+
+<!-- SIDEBAR -->
+
+<aside>
+
+<div class="box">
+
+<h3>🔥 Artikel Populer</h3>
+
+<ul>
+
+<li><a href="article/article-1.html">7 Tips Dating yang Sehat agar Hubungan Lebih Harmonis</a></li>
+
+<li><a href="article/article-2.html">5 Cara Menjaga Hubungan Tetap Awet</a></li>
+
+<li><a href="article/article-3.html"></a>Kesalahan Saat PDKT</li>
+
+</ul>
+
+</div>
+
+
+
+<div class="box">
+
+<h3>📂 Kategori</h3>
+
+<ul>
+
+<li>Dating</li>
+
+<li>Relationship</li>
+
+<li>Love Tips</li>
+
+<li>Komunikasi</li>
+
+</ul>
+
+</div>
+
+</aside>
+
+</div>
+</div>
+
+<footer>
+
+<div class="container">
+
+<h2 style="margin-bottom:10px;">DatingBlog</h2>
+
+<p>
+Temukan berbagai artikel seputar hubungan, dating, komunikasi, dan tips membangun hubungan yang sehat.
+</p>
+
+<p style="margin-top:20px;font-size:14px;opacity:.8;">
+© 2026 DatingBlog. All Rights Reserved.
+</p>
+
+</div>
+
+</footer>
+
+</body>
+
+</html>

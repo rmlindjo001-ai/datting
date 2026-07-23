@@ -107,7 +107,29 @@ transition:.3s;
 color:#2563eb;
 
 }
+    
+.featured{
+    margin:25px 0 40px;
+}
 
+.featured-card{
+    display:block;
+    overflow:hidden;
+    border-radius:22px;
+    box-shadow:0 20px 50px rgba(0,0,0,.15);
+}
+
+.featured-card img{
+    width:100%;
+    height:340px;
+    object-fit:cover;
+    transition:.5s;
+}
+
+.featured-card:hover img{
+    transform:scale(1.03);
+}
+    
 .section{
 
 padding:70px 0;
@@ -250,25 +272,23 @@ padding:35px;
     
 <div class="container">
 
-
-<!-- HERO -->
-
 <section class="featured">
 
-<img src="../images/thumbnail-dating.webp"
-
+<img src="../images/thumbnail.webp"
+    
 </a>
 
-</header>
+</section>
 
 <section class="section">
 
 <div class="container">
 
 <div class="cards">
-<a href="../article/article-1.html">
+    
+<a href="../article/article-1.html" class="card">
 
-<img src="../images/article-1.webp"> alt="Dating Tips">
+<img src="../images/article-1.webp" alt="Dating Tips">
 
 <div class="card-content">
 

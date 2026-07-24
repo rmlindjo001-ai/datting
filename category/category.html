@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Kategori | DatingBlog</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#f5f7fb;
+color:#1f2937;
+line-height:1.8;
+}
+
+a{
+text-decoration:none;
+color:inherit;
+}
+
+.container{
+width:min(1180px,94%);
+margin:auto;
+}
+
+header{
+
+position:sticky;
+top:0;
+
+background:#ffffffef;
+
+backdrop-filter:blur(12px);
+
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+z-index:999;
+
+}
+
+nav{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:18px 0;
+
+}
+
+.logo{
+
+font-size:30px;
+font-weight:700;
+color:#2563eb;
+
+}
+
+.menu{
+
+display:flex;
+gap:30px;
+
+}
+
+.menu a{
+
+font-weight:500;
+transition:.3s;
+
+}
+
+.menu a:hover{
+
+color:#2563eb;
+
+}
+
+.hero{
+
+height:340px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+text-align:center;
+
+background:
+
+linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+
+url("images/categories-banner.webp");
+
+background-size:cover;
+
+background-position:center;
+
+color:white;
+
+}
+
+.hero h1{
+
+font-size:clamp(34px,6vw,60px);
+
+margin-bottom:15px;
+
+}
+
+.hero p{
+
+max-width:700px;
+
+margin:auto;
+
+font-size:18px;
+
+opacity:.95;
+
+}
+
+.section{
+
+padding:70px 0;
+
+}
+
+.category-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(360px,1fr));
+
+gap:35px;
+
+}
+
+.category-card{
+
+background:white;
+
+border-radius:20px;
+
+overflow:hidden;
+
+box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+transition:.35s;
+
+}
+
+.category-card:hover{
+
+transform:translateY(-8px);
+
+}
+
+.category-card img{
+
+width:100%;
+
+height:220px;
+
+object-fit:cover;
+
+}
+
+.category-content{
+
+padding:25px;
+
+}
+
+.category-content h2{
+
+font-size:28px;
+
+margin-bottom:10px;
+
+}
+
+.category-content p{
+
+color:#6b7280;
+
+margin-bottom:20px;
+
+}
+
+.button{
+
+display:inline-block;
+
+background:#2563eb;
+
+color:white;
+
+padding:12px 24px;
+
+border-radius:40px;
+
+transition:.3s;
+
+}
+
+.button:hover{
+
+background:#1d4ed8;
+
+}
+
+footer{
+
+margin-top:60px;
+
+background:#111827;
+
+color:white;
+
+text-align:center;
+
+padding:35px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="container">
+
+<nav>
+
+<a href="index.html" class="logo">DatingBlog</a>
+
+<div class="menu">
+
+<a href="index.html">Home</a>
+
+<a href="categories.html">Kategori</a>
+
+</div>
+
+</nav>
+
+</div>
+
+</header>
+
+<section class="hero">
+
+<div class="container">
+
+<h1>Semua Kategori</h1>
+
+<p>
+
+Temukan artikel berdasarkan topik yang ingin kamu pelajari. Pilih kategori favoritmu dan mulai membaca.
+
+</p>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="container">
+
+<div class="category-grid">
+<a href="categories/dating.html" class="category-card">
+
+<img src="images/category-dating.webp" alt="Dating">
+
+<div class="category-content">
+
+<h2>❤️ Dating</h2>
+
+<p>
+
+Temukan berbagai artikel seputar dating, first date, PDKT, komunikasi, dan tips membangun hubungan yang sehat.
+
+</p>
+
+<p><strong>10 Artikel</strong></p>
+
+<span class="button">Lihat Artikel →</span>
+
+</div>
+
+</a>
+<a href="categories/relationship.html" class="category-card">
+
+<img src="images/category-relationship.webp" alt="Relationship">
+
+<div class="category-content">
+
+<h2>💕 Relationship</h2>
+
+<p>
+
+Kumpulan artikel mengenai hubungan yang sehat, komunikasi pasangan, konflik, red flag, green flag, hingga menjaga hubungan tetap harmonis.
+
+</p>
+
+<p><strong>8 Artikel</strong></p>
+
+<span class="button">Lihat Artikel →</span>
+
+</div>
+
+</a>
+<a href="categories/ldr.html" class="category-card">
+
+<img src="images/category-ldr.webp" alt="ldr">
+
+<div class="category-content">
+
+<h2>🌍 LDR</h2>
+
+<p>
+
+Panduan lengkap menjalani hubungan jarak jauh agar tetap harmonis, penuh kepercayaan, dan mampu menghadapi berbagai tantangan bersama.
+
+</p>
+
+<p><strong>8 Artikel</strong></p>
+
+<span class="button">Lihat Artikel →</span>
+
+</div>
+
+</a>
+
+<a href="categories/Self Improvement.html" class="category-card">
+
+<img src="images/category-Self-Improvement.webp" alt="Self-Improvement">
+
+<div class="category-content">
+
+<h2>🌱 Self Improvement</h2>
+
+<p>
+
+Kumpulan artikel mengenai hubungan yang sehat, komunikasi pasangan, konflik, red flag, green flag, hingga menjaga hubungan tetap harmonis.
+
+</p>
+
+<p><strong>8 Artikel</strong></p>
+
+<span class="button">Lihat Artikel →</span>
+
+</div>
+
+</a>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 DatingBlog. All Rights Reserved.</p>
+
+</footer>
+
+</body>
+
+</html>
